@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+    <title>Vinícius Matos</title>
+</head>
+<body>
+    <div class="particulas"></div>
+
+    <nav class="navbar">
+        <ul class="menu">
+            <li>
+                <a href="#inicio" class="menu-link">Início</a>
+            </li>
+            <li>
+                <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#projetos" class="menu-link">Projetos</a>
+            </li>
+            <li>
+                <a href="#contatos" class="menu-link">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="header">
+        <img src="img/perfil.jpg" alt="Foto de Vinícius Matos" class="foto-perfil">
+        <h1>Vinícius Matos</h1>
+        <p class="header-sub">Desenvolvedor Full Stack</p>
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rem corrupti ad odio doloremque numquam, nostrum nisi tempora sequi alias eos dolore maxime illum consequuntur aut deserunt unde doloribus nemo eum sint ullam. Repellendus assumenda ipsa quam ad in alias, illum aspernatur exercitationem nam quibusdam? Aspernatur voluptatum quas saepe quibusdam.
+            </p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+            <div class="projetos-card">
+                <img src="img/sample-card.jpg" alt="Imagem do Projeto" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="projetos-nome">Projeto 1</h3>
+                    <p class="projetos-paragrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, suscipit?</p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="img/sample-card.jpg" alt="Imagem do Projeto" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="projetos-nome">Projeto 2</h3>
+                    <p class="projetos-paragrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, suscipit?</p> 
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="img/sample-card.jpg" alt="Imagem do Projeto" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="projetos-nome">Projeto 3</h3>
+                    <p class="projetos-paragrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, suscipit?</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulo">Contatos</h2>
+        <form class="contatos-formulario" id="formulario" onsubmit="enviarMensagem(event)">
+            <div class="grupo-form">
+                <input placeholder="Nome" class="campo-form" id="nome">
+            </div>
+            <div class="grupo-form">
+                <textarea class="campo-form" placeholder="Digite sua mensagem" rows="4" id="mensagem"></textarea>
+            </div>
+
+            <button type="submit" class="botao-form">Enviar mensagem</button>
+        </form>
+    </section>
+</body>
+</html>
