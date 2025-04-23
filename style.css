@@ -55,7 +55,7 @@ body {
     bottom: 0;
     left: 0;
     background: linear-gradient(90deg, var(--primaria), var(--secundaria));
-    transition: width 0.5s ease;
+    transition: width 0.3s ease;
 }
 
 .menu-link:hover::after {
@@ -83,7 +83,7 @@ body {
     box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
     border-radius: 50%;
     border: 4px solid var(--vidro);
-    animation: flutuar 5s ease-in-out infinite;
+    animation: flutuar 3s ease-in-out infinite;
 }
 
 .header-sub {
@@ -96,6 +96,7 @@ body {
 }
 
 .sobre-titulo {
+    padding: 2rem;
     font-size: 3rem;
     color: var(--claro);
     text-align: center;
@@ -119,6 +120,7 @@ body {
 
 .projetos {
     padding: 6rem, 2rem;
+
 }
 
 .projetos-titulo {
@@ -141,7 +143,7 @@ body {
     backdrop-filter: blur(5px);
     border: 1px solid var(--vidro);
     overflow: hidden;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
     cursor: pointer;
 }
 
@@ -170,7 +172,8 @@ body {
 }
 
 .contatos {
-    padding: 6rem, 2rem;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
 }
 
 .contatos-titulo {
@@ -179,7 +182,7 @@ body {
     margin-bottom: 50px;
 }
 
-.formulario-contato {
+.contatos-formulario {
     max-width: 600px;
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.05);
@@ -217,7 +220,7 @@ body {
     cursor: pointer;
     font-weight: bold;
     width: 100%;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 }
 
 .botao-form:hover {
